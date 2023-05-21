@@ -18,9 +18,8 @@ const userSchema = new mongoose.Schema({
         type:Boolean,
         default:false
     },
-    
     mobNo:{
-     type:String
+        type:String
     }
 },{
     timestamps:true
