@@ -30,7 +30,7 @@ const AllOrders = () => {
        <div className='mainarea all-oredrs'>
          <Header/>
          <div className="all-orders-area">
-           <h2>My Orders</h2>
+           <h2>Мои заказы</h2>
            <div className="display-orders">
            { orders.length>0?orders.map((order)=>(
                <Link to={`/order/${order?._id}`}><div className="order-detail-card" key={order?._id}>
@@ -56,7 +56,7 @@ const AllOrders = () => {
                   <span>Your item has been placed.</span>
                  </div>
                </div></Link>
-           )):<h1>No Past Orders</h1>
+           )):<h1>Предыдущих заказов нет</h1>
                
               }
 

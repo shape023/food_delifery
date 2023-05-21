@@ -47,7 +47,7 @@ const AdminOrders = () => {
                   <span>Your item has been placed.</span>
                  </div>
                </div></Link>
-           )):<h1>No Past Orders</h1>
+           )):<h1>Предыдущих заказов нет</h1>
                
               }
 

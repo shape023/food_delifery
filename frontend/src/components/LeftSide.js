@@ -22,7 +22,7 @@ const LeftSide = ({data ,show}) => {
                         user?.user?(
                             <Link to="/profile"> <div className='user-profile-icon'>{user.user.name.charAt(0)}</div></Link>
                         ):(
-                            <Link to="/signin"> <button>Login</button></Link>
+                            <Link to="/signin"> <button>Войти</button></Link>
                         )
                     }
                 </div>)}
@@ -52,13 +52,13 @@ const LeftSide = ({data ,show}) => {
                     <img src={delivery} alt="" />
                 </div>
                 <div className="text">
-                    <h2>Safe Delivery <span>@</span> your doors</h2>
+                    <h2>Безопасная доставка <span></span> до двери</h2>
                 </div>
             </div>)}
            { show?null:(<div className="side-cart-area">
                 <div className="text">
-                    <h4>Order Menu</h4>
-                    <Link to='/cart'><p>Veiw All <BsFillArrowRightSquareFill/></p></Link>
+                    <h4>Меню заказа</h4>
+                    <Link to='/cart'><p>Посмотреть все <BsFillArrowRightSquareFill/></p></Link>
                 </div>
             <div className='cart-area'>
                       <div className="all-items side-cart">

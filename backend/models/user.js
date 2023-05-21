@@ -18,9 +18,7 @@ const userSchema = new mongoose.Schema({
         type:Boolean,
         default:false
     },
-    mobNo:{
-
-    },
+    
     mobNo:{
      type:String
     }
