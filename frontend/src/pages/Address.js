@@ -31,7 +31,7 @@ const Address = () => {
     <div className='mainarea'>
     <Header/>
     <div className="address">
-        <h3>Your addresAddress</h3>
+        <h3>Ваш адрес</h3>
         <div className="add-sec-area">
             {
             allAdress.length>0?(allAdress.map((address,i)=>(
@@ -46,12 +46,12 @@ const Address = () => {
                 </div>
                </div>
             ))
-            ):<h3 style={{padding:'20px 0'}}>No Address found! Add one</h3>}
+            ):<h3 style={{padding:'20px 0'}}>Ни одного адреса нет! Добавьте новый</h3>}
            
             <div className="add-address" onClick={()=>setShow(true)}>
              <div className="add">
                  <RiAddFill/>
-                 <p>Add Address</p>
+                 <p>Добавить адрес</p>
              </div>
             </div>
         </div>

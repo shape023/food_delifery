@@ -26,7 +26,7 @@ const Cart = () => {
         <>
         <SideBar/>
         <div className='cart-screen'>
-            <h1>MY CART</h1>
+            <h1>МОЯ КОРЗИНА</h1>
             {
                 cartItems?.length>0?(
                   <div className='cart-area'>
@@ -61,9 +61,9 @@ const Cart = () => {
                 ):(
                     <>
                     <img src={emtycart} alt="" />
-                    <h2>Hey, it feels so light!</h2>
-                    <p>There is nothing in your bag. Let's add some items.</p>
-                    <Link to="/"><button>Go Back</button></Link>
+                    <h2>ВАША КОРЗИНА ПУСТА</h2>
+                    <p>В вашей корзине ничего нет. Давайте добавим товаров.</p>
+                    <Link to="/"><button>Вернуться</button></Link>
                     </>
                 )
             }

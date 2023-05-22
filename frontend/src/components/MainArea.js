@@ -66,7 +66,7 @@ const MainArea = () => {
                   </div>
                   
               </div>
-              <div className={`cat-icon  ${category==='Smoothy'&&'active'} `} onClick={()=>setCategory('Smoothy')}>
+             {/*  <div className={`cat-icon  ${category==='Smoothy'&&'active'} `} onClick={()=>setCategory('Smoothy')}>
                   <div className="img">
 
                   <img src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/2x/external-ice-cream-carnival-vitaliy-gorbachev-flat-vitaly-gorbachev.png" alt="pizza" />
@@ -74,18 +74,8 @@ const MainArea = () => {
                   <div className="text">
                    Супы
                   </div>
-
-                  </div>
-              <div className={`cat-icon  ${category==='Smoothy'&&'active'} `} onClick={()=>setCategory('Smoothy')}>
-                  <div className="img">
-
-                  <img src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/2x/external-ice-cream-carnival-vitaliy-gorbachev-flat-vitaly-gorbachev.png" alt="pizza" />
-                  </div>
-                  <div className="text">
-                   Салаты
-                  </div>
                   
-              </div>
+              </div> */}
               <div className={`cat-icon  ${category==='Snaks'&&'active'} `} onClick={()=>setCategory('Snaks')}>
                   <div className="img">
 

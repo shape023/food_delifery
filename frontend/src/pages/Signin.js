@@ -24,7 +24,7 @@ const Signin = () => {
         password:yup.string().required("Please Enter your password")
         .test(
             "regex",
-            "Password must be min 6 characters, and have 1 Special Character, 1 Uppercase, 1 Number and 1 Lowercase",
+            "Пароль должен содержать не менее 6 символов и содержать 1 специальный символ, 1 заглавный, 1 цифру и одну строчную букву",
           val => {
             let regExp = new RegExp(
                 /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})/
@@ -64,15 +64,15 @@ const Signin = () => {
                 <form onSubmit={handleSubmit(submitHandler)}>
                     <input type="email" name='email' placeholder='Email' {...register('email', { required: true })} />
                     {errors?.email?.message&&<p className="err">{errors?.email?.message}</p>}
-                    <input type="password" name="password" id="" placeholder='Password' {...register('password', { required: true })} />
+                    <input type="password" name="password" id="" placeholder='Пароль' {...register('password', { required: true })} />
                     {errors?.password?.message&&<p className="err">{errors?.password?.message}</p>}
                     <div className="text">
-                      <Link to="/updatepassword">  <p>Forget Password?</p></Link>
+                      <Link to="/updatepassword">  <p>Забыли пароль?</p></Link>
                     </div>
-                    <button type="submit">{user?.loading? <Spinner/>:'Login'}</button>
+                    <button type="submit">{user?.loading? <Spinner/>:'Войти'}</button>
                 </form>
                 <div className="forget">
-                 <p>New user?</p> <Link to="/signup">Register</Link>
+                 <p>Новый пользователь?</p> <Link to="/signup">Зарегистрироваться</Link>
                 </div>
             </div>
         </div>

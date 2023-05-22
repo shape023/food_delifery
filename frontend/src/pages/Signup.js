@@ -61,19 +61,19 @@ const Signup = () => {
                  {user?.error}
                 </div>)}
                 <form onSubmit={handleSubmit(submitHandler)}>
-                <input type="text" name='name' placeholder='Name' {...register('name', { required: true })} />
+                <input type="text" name='name' placeholder='Имя' {...register('name', { required: true })} />
                     {errors?.name?.message&&<p className="err">{errors?.name?.message}</p>}
                     <input type="email" name='email' placeholder='Email' {...register('email', { required: true })} />
                     {errors?.email?.message&&<p className="err">{errors?.email?.message}</p>}
-                    <input type="password" name="password" id="" placeholder='Password' {...register('password', { required: true })} />
+                    <input type="password" name="password" id="" placeholder='Пароль' {...register('password', { required: true })} />
                     {errors?.password?.message&&<p className="err">{errors?.password?.message}</p>}
                     <div className="text">
-                      <Link to="/updatepassword">  <p>Forget Password?</p></Link>
+                      <Link to="/updatepassword">  <p>Забыли пароль?</p></Link>
                     </div>
-                    <button type="submit">{user?.loading? <Spinner/>:'Register'}</button>
+                    <button type="submit">{user?.loading? <Spinner/>:'Регистрация'}</button>
                 </form>
                 <div className="forget">
-                 <p>Alreday a user?</p> <Link to="/signin">Login</Link>
+                 <p>Уже пользователь?</p> <Link to="/signin">Войти</Link>
                 </div>
             </div>
         </div>

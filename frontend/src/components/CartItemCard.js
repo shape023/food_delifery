@@ -45,7 +45,7 @@ dispatch(deleteItem(item.product))
                </div>
             </div>
             <div className="price">
-              <h2><span>Rs.</span>{item.price}</h2>
+              <h2><span>Руб. </span>{item.price}</h2>
             </div>
         </div>
     )

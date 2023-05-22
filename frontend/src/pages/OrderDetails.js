@@ -54,7 +54,7 @@ const OrderDetails = () => {
                             <p className='des'>{item.description?item.description:'Treat your taste buds with Double Pepper Barbecue Chicken, Peri-Peri Chicken, Chicken Tikka & Grilled Chicken Rashers'}</p>
                          </div>
                          <div className="price">
-                           <h2><span>Rs.</span>{item.price}</h2>
+                           <h2><span>Руб. </span>{item.price}</h2>
                          </div>
                      </div>
                      ))}

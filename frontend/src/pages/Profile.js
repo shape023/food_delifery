@@ -61,8 +61,8 @@ if(text==='mob'){
              </>
              ):(
                <div>
-                 <h1>You are not Logged In!,Please Login</h1>
-                 <Link to="/signin"><button>Login</button></Link>
+                 <h1>Вы не зарегистрированы! Пожалуйста, зарегистрируйтесь</h1>
+                 <Link to="/signin"><button>Регистрация</button></Link>
                  </div>
              )
            }
