@@ -43,8 +43,8 @@ const AllOrders = () => {
                     </div>
                     <div className="details">
                      <h4>{item?.name}</h4>
-                     <p>qty:{item?.qty}</p>
-                     <p>place Date : {order?.createdAt}</p>
+                     <p>Кол:{item?.qty}</p>
+                     <p>Размещение данных : {order?.createdAt}</p>
                     </div>
                     </div>
                    ))
@@ -52,8 +52,8 @@ const AllOrders = () => {
                 }
                 </div>
                  <div className="status">
-                  <p>Placed on{order?.createdAt} </p>
-                  <span>Your item has been placed.</span>
+                  <p>Помещенный на{order?.createdAt} </p>
+                  <span>Ваш товар был размещен.</span>
                  </div>
                </div></Link>
            )):<h1>Предыдущих заказов нет</h1>

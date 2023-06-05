@@ -217,19 +217,19 @@ const CustomPizza = () => {
            <div className="checkout-area">
                         
                         <div className="billing">
-                          <h4>PRICE DETAILS</h4>
+                          <h4>ИНФОРМАЦИЯ О ЦЕНЕ</h4>
                           <div className="details">
                               <div className="item">
-                                  <p>Price</p>
-                                  <p><span>₹</span>{50}</p>
+                                  <p>Цена</p>
+                                  <p><span>₽</span>{50}</p>
                               </div>
                               <div className="item">
                                   <p>Extra Toppings</p>
-                                  <p>-<span>₹</span>{toopingPrice}</p>
+                                  <p>-<span>₽</span>{toopingPrice}</p>
                               </div>
                               <div className="item">
                                   <p>Extra Chees</p>
-                                  <p>-<span>₹</span>{cheesPrice}</p>
+                                  <p>-<span>₽</span>{cheesPrice}</p>
                               </div>
                              
                           </div>

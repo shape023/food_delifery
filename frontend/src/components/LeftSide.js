@@ -65,7 +65,7 @@ const LeftSide = ({data ,show}) => {
                        {cartItems.slice(0,3).map((item)=>(
                            <CartItemCard key={item.product} item={item}/>
                        ))}
-                      {cartItems.length>0&&<Link to="/cart"><button>PROCEED TO CHECKOUT</button></Link>}
+                      {cartItems.length>0&&<Link to="/cart"><button>ПЕРЕЙТИ К ОФОРМЛЕНИЮ</button></Link>}
                       </div>
                 </div>
             </div>)}

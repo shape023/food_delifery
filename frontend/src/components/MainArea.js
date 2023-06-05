@@ -18,7 +18,7 @@ const MainArea = () => {
                 </div>
                 <div className="text">
                 <h2>Здравствуйте {user?.user?.name}</h2>
-                <p>Получите бесплатную доставку на сумму <span>от 1299 рублей</span>  и выше</p>
+                <p>Получите бесплатную доставку на сумму <span>от 500 рублей</span>  и выше</p>
                 <button>Закажите сейчас!</button>
                 <img className='full circle' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/768px-Orange_circle_100%25.svg.png" alt="" />
                 <img className='small circle' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/768px-Orange_circle_100%25.svg.png" alt="" />
@@ -49,7 +49,7 @@ const MainArea = () => {
               <div className={`cat-icon  ${category==='Burger'&&'active'} `} onClick={()=>setCategory('Burger')}>
                   <div className="img">
 
-                  <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="pizza" />
+                  <img src="https://cdn-icons-png.flaticon.com/128/878/878052.png" alt="burger" />
                   </div>
                   <div className="text">
                    Бургеры
@@ -59,7 +59,7 @@ const MainArea = () => {
               <div className={`cat-icon  ${category==='Sandwich'&&'active'} `} onClick={()=>setCategory('Sandwich')}>
                   <div className="img">
 
-                  <img src="https://cdn-icons-png.flaticon.com/128/6518/6518098.png" alt="pizza" />
+                  <img src="https://cdn-icons-png.flaticon.com/128/6518/6518098.png" alt="sandwich" />
                   </div>
                   <div className="text">
                   Сэндвичы
@@ -79,7 +79,7 @@ const MainArea = () => {
               <div className={`cat-icon  ${category==='Snaks'&&'active'} `} onClick={()=>setCategory('Snaks')}>
                   <div className="img">
 
-                  <img src="https://img.icons8.com/color/2x/popcorn.png" alt="pizza" />
+                  <img src="https://img.icons8.com/color/2x/popcorn.png" alt="snaks" />
                   </div>
                   <div className="text">
                    Закуски
@@ -89,7 +89,7 @@ const MainArea = () => {
               <div className={`cat-icon  ${category==='Drink'&&'active'} `} onClick={()=>setCategory('Drink')}>
                   <div className="img">
 
-                  <img src="https://img.icons8.com/external-itim2101-flat-itim2101/2x/external-drinking-cafe-itim2101-flat-itim2101.png" alt="pizza" />
+                  <img src="https://img.icons8.com/external-itim2101-flat-itim2101/2x/external-drinking-cafe-itim2101-flat-itim2101.png" alt="drink" />
                   </div>
                   <div className="text">
                    Напитки

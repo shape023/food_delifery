@@ -9,7 +9,6 @@ import SkeletonArticle from '../skeleton/SkeletonArticle';
 import { getWishlist } from '../actions/wishlist';
 const Wishlist = () => {
     const error = useSelector(state=>state.wishlist?.error)
-//    console.log(query)
     const [show,setShow]=useState(error?true:false)
     const data = useSelector(state=>state.wishlist.wishlistItems)
     const loading = useSelector(state=>state.wishlist.loading)

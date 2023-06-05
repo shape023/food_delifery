@@ -32,7 +32,7 @@ dispatch(deleteItem(item.product))
             </div>
             <div className="des">
                <h3>{item.name}</h3>
-               <p>qty:{item.qty}</p>
+               <p>Количество: {item.qty}</p>
                <div className="handle">
                    <div className="qty">
                        <div className='btn' onClick={decreaseQty}><IoMdRemove/></div>

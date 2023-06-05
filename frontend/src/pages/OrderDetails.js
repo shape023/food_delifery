@@ -71,7 +71,7 @@ const OrderDetails = () => {
 </div>
 <div className="checkout-area">
                    <div className="billing">
-                     <h4>PRICE DETAILS</h4>
+                     <h4>ИНФОРМАЦИЯ О ЦЕНЕ</h4>
                      <div className="details">
                          <div className="item">
                              <p>Price</p>
@@ -79,13 +79,13 @@ const OrderDetails = () => {
                          </div>
                         
                          <div className="item">
-                             <p>Delivery Charges</p>
-                             <p>{shippingPrice===0?<span className='free'>Free</span>:<span>₹{shippingPrice}</span>}</p>
+                             <p>Стоимость доставки</p>
+                             <p>{shippingPrice===0?<span className='free'>Бесплатно</span>:<span>₽{shippingPrice}</span>}</p>
                          </div>
                      </div>
                      <div className="total">
-                         <h3>Total</h3>
-                         <h3><span>₹</span>{totalprice?.toFixed(2)}</h3>
+                         <h3>Итог</h3>
+                         <h3><span>₽</span>{totalprice?.toFixed(2)}</h3>
                      </div>
                    </div>
      </div>

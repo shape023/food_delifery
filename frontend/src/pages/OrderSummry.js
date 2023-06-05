@@ -144,30 +144,30 @@ if(!res){
   <div className='shipping'>
        <div className="progress">
         <div className="status">
-            <p>Bag</p>
+            <p>Корзина</p>
             <div className={`divider`}></div>
-            <p className={` ${path==='/shipping'&& 'active'}`}>Shipping</p>
+            <p className={` ${path==='/shipping'&& 'active'}`}>Доставка</p>
             <div className="divider"></div>
-           <p className={` ${path==='/payment'&& 'active'}`}>Payment</p>
+           <p className={` ${path==='/payment'&& 'active'}`}>Оплата</p>
            <div className="divider"></div>
-           <p className={` ${path==='/order'&& 'active'}`}>Order</p>
+           <p className={` ${path==='/order'&& 'active'}`}>Заказ</p>
         </div>
    </div>
    <div className="shipping-details">
    <div className="address">
-   <h3>ORDER SUMMRY</h3>
+   <h3>Описание заказа</h3>
    <div className="add-sec-area">
-       <h4>Shipping</h4>
+       <h4>Доставка</h4>
          {address&&(
              <div  className={`og-add`}>
                 <p>{address.name}</p>
                 <span>{address.address},{address.town}</span>
                 <span>{address.city},{address.state} -{address.pinCode} </span>
-                <span><b>Mobile No:</b>{address.mobNo}</span>
+                <span><b>Мобильный номер телефона</b>{address.mobNo}</span>
                </div>
                  )}
         </div>
-        <h4>Products</h4>
+        <h4>Продукты</h4>
                      <div className="cart-area">
                          
                      <div className="all-items">
@@ -188,7 +188,7 @@ if(!res){
                         ))}
                       </div>
                       </div>
-                      <h4>Payment Method</h4>
+                      <h4>Метод оплаты</h4>
                       <div className="payments-opts">
                     <div className="payment-method">
                     <div className='select-opt'>
@@ -199,21 +199,21 @@ if(!res){
    </div>
    <div className="checkout-area">
                       <div className="billing">
-                        <h4>PRICE DETAILS</h4>
+                        <h4>ИНФОРМАЦИЯ О ЦЕНЕ</h4>
                         <div className="details">
                             <div className="item">
-                                <p>Price</p>
-                                <p><span>₹</span>{cartPrice}</p>
+                                <p>Цена</p>
+                                <p><span>₽</span>{cartPrice}</p>
                             </div>
                            
                             <div className="item">
-                                <p>Delivery Charges</p>
-                                <p>{deleviryPrice===0?<span className='free'>Free</span>:<span>₹{deleviryPrice}</span>}</p>
+                                <p>Стоимость доставки</p>
+                                <p>{deleviryPrice===0?<span className='free'>Бесплатно</span>:<span>₽{deleviryPrice}</span>}</p>
                             </div>
                         </div>
                         <div className="total">
-                            <h3>Total</h3>
-                            <h3><span>₹</span>{totalPrice.toFixed(2)}</h3>
+                            <h3>Итог</h3>
+                            <h3><span>₽</span>{totalPrice.toFixed(2)}</h3>
                         </div>
                       </div>
                       {

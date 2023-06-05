@@ -44,7 +44,7 @@ if(text==='mob'){
              <div className="profile-detail">
                  <form onSubmit={handleSubmit}>
                      <div className="profile-input">
-                        <label htmlFor="name">Full Name</label>
+                        <label htmlFor="name">Полное имя</label>
                         <input type="text" id='name' onChange={(e)=>handleInputChange(e.target.value,'name')} value={name} />
                      </div>
                      <div className="profile-input">
@@ -52,7 +52,7 @@ if(text==='mob'){
                         <input type="text" id='email' value={user?.eamil} />
                      </div>
                      <div className="profile-input">
-                        <label htmlFor="mob">Mobile No.</label>
+                        <label htmlFor="mob">Мобильный номер телефона</label>
                         <input type="text" id='mob' onChange={(e)=>handleInputChange(e.target.value,'mob')} value={mobNo} />
                      </div>
                      {showBtn&&<button type='submit'>UPDATE</button>}

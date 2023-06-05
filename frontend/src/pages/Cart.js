@@ -38,24 +38,24 @@ const Cart = () => {
                       <div className="checkout-area">
                         
                       <div className="billing">
-                        <h4>PRICE DETAILS</h4>
+                        <h4>ИНФОРМАЦИЯ О ЦЕНЕ</h4>
                         <div className="details">
                             <div className="item">
-                                <p>Price</p>
-                                <p><span>₹</span>{cartPrice}</p>
+                                <p>Цена</p>
+                                <p><span>₽</span>{cartPrice}</p>
                             </div>
                            
                             <div className="item">
-                                <p>Delivery Charges</p>
-                                <p>{deleviryPrice===0?<span className='free'>Free</span>:<span>₹{deleviryPrice}</span>}</p>
+                                <p>Стоимость доставки</p>
+                                <p>{deleviryPrice===0?<span className='free'>Бесплатно</span>:<span>₽{deleviryPrice}</span>}</p>
                             </div>
                         </div>
                         <div className="total">
-                            <h3>Total</h3>
-                            <h3><span>₹</span>{totalPrice}</h3>
+                            <h3>Итог</h3>
+                            <h3><span>₽</span>{totalPrice}</h3>
                         </div>
                       </div>
-                      <button onClick={checkoutHandler} disabled={totalPrice===0?true:false}>PROCEED TO CHECKOUT</button>
+                      <button onClick={checkoutHandler} disabled={totalPrice===0?true:false}>ПЕРЕЙТИ К ОФОРМЛЕНИЮ</button>
                       </div>
                   </div>
                 ):(
