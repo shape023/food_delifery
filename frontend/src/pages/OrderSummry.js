@@ -20,7 +20,7 @@ const OrderSummry = () => {
     const orderCreate =useSelector(state=>state.order)
     const cartItems = useSelector(state=>state.cart.cartItems)
     const cartPrice=cartItems.reduce((total,itm)=>total+itm?.price*itm?.qty,0)
-    const deleviryPrice = (cartPrice>500||cartPrice===0)?0:50
+    const deleviryPrice = (cartPrice>1299||cartPrice===0)?0:50
     const discount = 0;
     const totalPrice= (cartPrice+deleviryPrice)-discount;
     const address = useSelector(state=>state.address.slectedAddress)

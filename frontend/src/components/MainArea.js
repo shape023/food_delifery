@@ -18,7 +18,7 @@ const MainArea = () => {
                 </div>
                 <div className="text">
                 <h2>Здравствуйте {user?.user?.name}</h2>
-                <p>Получите бесплатную доставку на сумму <span>от 500 рублей</span>  и выше</p>
+                <p>Получите бесплатную доставку на сумму <span>от 1299 рублей</span>  и выше</p>
                 <button>Закажите сейчас!</button>
                 <img className='full circle' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/768px-Orange_circle_100%25.svg.png" alt="" />
                 <img className='small circle' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/768px-Orange_circle_100%25.svg.png" alt="" />
