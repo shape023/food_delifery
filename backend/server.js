@@ -20,6 +20,8 @@ mongoose.connect(uri, (err) => {
   console.log('connected...');
 });
 
+mongoose.set('debug', true)
+
 app.use(cors());
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);

@@ -109,7 +109,7 @@ userRouter.post(
     console.log(req.body);
     const newAdress = Address({
       name: req.body.name,
-      mobNo: req.body.mobNo,
+      mobNo: req.body.mobNo ? req.body.mobNo.toString() : '',
       pinCode: req.body.pinCode,
       address: req.body.address,
       town: req.body.town,

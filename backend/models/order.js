@@ -18,7 +18,7 @@ const orderSchema = new moongoose.Schema({
     shippingAddress:{
         name:{type:String,required:true},
         mobNo:{
-            type:Number,
+            type:String,
             required:true,
         },
         pinCode:{
