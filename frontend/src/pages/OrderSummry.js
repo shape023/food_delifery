@@ -31,12 +31,12 @@ const OrderSummry = () => {
 
 
     const handlePlaceOrder =()=>{
-       dispatch(placeOrder({orderItems:cartItems,shippingAddress:address,paymentMethod:paymentMethod,itemsPrice:cartPrice,totalprice:totalPrice,shippingPrice:deleviryPrice,email:user.eamil,userName:user.name}))
+       dispatch(placeOrder({orderItems:cartItems,shippingAddress:address,paymentMethod:paymentMethod,itemsPrice:cartPrice,totalprice:totalPrice,shippingPrice:deleviryPrice,email:user.eamil,userName:user?.name}))
     }
 
     const PaymentHandler=(paymentResult)=>{
       const {razorpay_payment_id}=paymentResult
-      dispatch(placeOrder({orderItems:cartItems,shippingAddress:address,paymentMethod:paymentMethod,itemsPrice:cartPrice,totalprice:totalPrice,shippingPrice:deleviryPrice,email:user.eamil,userName:user.name,paymentId:razorpay_payment_id}))
+      dispatch(placeOrder({orderItems:cartItems,shippingAddress:address,paymentMethod:paymentMethod,itemsPrice:cartPrice,totalprice:totalPrice,shippingPrice:deleviryPrice,email:user.eamil,userName:user?.name,paymentId:razorpay_payment_id}))
 
     }
 
@@ -89,15 +89,15 @@ const options = {
    "amount":totalPrice*100,
   "name": "Pizza Delivery",
   "image":logo,
-  "description":address.name,
+  "description":address?.name,
    //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
   "handler": function (response){
     PaymentHandler(response)
   },
   "prefill": {
-      "name":address.name,
+      "name":address?.name,
       "email":user?.eamil,
-      "contact":`${91}${address.mobNo}`
+      "contact":`${91}${address?.mobNo}`
   },
   
 };
@@ -160,10 +160,10 @@ if(!res){
        <h4>Доставка</h4>
          {address&&(
              <div  className={`og-add`}>
-                <p>{address.name}</p>
+                <p>{address?.name}</p>
                 <span>{address.address},{address.town}</span>
                 <span>{address.city},{address.state} -{address.pinCode} </span>
-                <span><b>Мобильный номер телефона</b>{address.mobNo}</span>
+                <span><b>Мобильный номер телефона</b>{address?.mobNo}</span>
                </div>
                  )}
         </div>
@@ -174,10 +174,10 @@ if(!res){
                         {cartItems.map((item)=>(
                             <div className='cart-card' key={item.product}>
                             <div className="img">
-                               <img src={item.image} alt={item.name} />
+                               <img src={item.image} alt={item?.name} />
                             </div>
                             <div className="des">
-                               <h3>{item.name}</h3>
+                               <h3>{item?.name}</h3>
                                <p>qty:{item.qty}</p>
                                <p className='des'>{item.description?item.description:'Treat your taste buds with Double Pepper Barbecue Chicken, Peri-Peri Chicken, Chicken Tikka & Grilled Chicken Rashers'}</p>
                             </div>

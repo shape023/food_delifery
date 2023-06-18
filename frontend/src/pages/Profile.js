@@ -8,16 +8,18 @@ import { updateprofile } from '../actions/auth';
 import { Link } from 'react-router-dom';
 const Profile = () => {
   const user = useSelector(state=>state.user?.user)
-  const [name,setName]=useState(user?.name?user?.name:'')
+  const [name,setName]=useState(user?.name || '')
+  const [email, setEmail] = useState(user?.eamil || '');
+
   const [mobNo,setMobNo]=useState(user?.mobNo?user?.mobNo:'')
   const [showBtn,setShowBtn]=useState(false)
-const dispatch =useDispatch()
-  const handleSubmit=(e)=>{
-    e.preventDefault()
-    dispatch(updateprofile({name,mobNo}))
-    setShowBtn(false)
+  const dispatch =useDispatch()
+    const handleSubmit=(e)=>{
+      e.preventDefault()
+      dispatch(updateprofile({ name,mobNo, email}))
+      setShowBtn(false)
 
-  }
+    }
 
 const handleInputChange=(value,text)=>{
   setShowBtn(true)
@@ -27,6 +29,10 @@ if(text==='name'){
 if(text==='mob'){
   setMobNo(value)
 }
+if (text === 'email') {
+  setEmail(value);
+}
+
 }
 
   return(
@@ -49,7 +55,7 @@ if(text==='mob'){
                      </div>
                      <div className="profile-input">
                         <label htmlFor="email">Email</label>
-                        <input type="text" id='email' value={user?.eamil} />
+                        <input type="text" id='email'  onChange={(e)=>handleInputChange(e.target.value,'email')} value={ email } />
                      </div>
                      <div className="profile-input">
                         <label htmlFor="mob">Мобильный номер телефона</label>

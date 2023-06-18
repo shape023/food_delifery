@@ -126,6 +126,7 @@ userRouter.put(
     if (user) {
       user.name = req.body.name;
       user.mobNo = req.body.mobNo;
+      user.email = req.body.email;
       const updatedUser = await user.save();
       res.send({
         _id: user._id,
