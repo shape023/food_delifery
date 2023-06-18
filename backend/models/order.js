@@ -26,16 +26,8 @@ const orderSchema = new moongoose.Schema({
             required:true
         },
         address:{
-           type:String,
-           required:true
-        },
-        town:{
             type:String,
-            required:true,
-        },
-        state:{
-            type:String,
-            required:true, 
+            required:true
         },
         city:{
             type:String,

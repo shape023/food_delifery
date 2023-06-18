@@ -92,8 +92,6 @@ userRouter.put(
       address.mobNo = req.body.mobNo;
       address.pinCode = req.body.pinCode;
       address.address = req.body.address;
-      address.town = req.body.town;
-      address.state = req.body.state;
       address.city = req.body.city;
       const newAddress = await address.save();
       res.send(newAddress);
@@ -112,8 +110,6 @@ userRouter.post(
       mobNo: req.body.mobNo ? req.body.mobNo.toString() : '',
       pinCode: req.body.pinCode,
       address: req.body.address,
-      town: req.body.town,
-      state: req.body.state,
       city: req.body.city,
       userId: req.body.userId,
     });
