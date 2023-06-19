@@ -44,7 +44,7 @@ const AllOrders = () => {
                     <div className="details">
                      <h4>{item?.name}</h4>
                      <p>Количество: {item?.qty}</p>
-                     <p>Размещение данных: {order?.createdAt}</p>
+                     <p>Размещение данных: {(new Date(order?.createdAt)).toLocaleDateString()}</p>
                     </div>
                     </div>
                    ))
@@ -52,7 +52,7 @@ const AllOrders = () => {
                 }
                 </div>
                  <div className="status">
-                  <p>Помещенный на {order?.createdAt} </p>
+                  <p>Размещен: {(new Date(order?.createdAt)).toLocaleDateString()} </p>
                   <span>Ваш товар был размещен.</span>
                  </div>
                </div></Link>

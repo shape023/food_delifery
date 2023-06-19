@@ -70,7 +70,7 @@ orderRouter.post('/',isAuth,expressAsyncHandler(async(req,res)=>{
    let info = await  transporter.sendMail({
     from: 'jaydeepshelake2001@gmail.com', // sender address
     to: order.email, // list of receivers
-    subject: "Order placed Successfuly🎉",
+    subject: "Заказ успешно создан",
     text: "Hello world?", // Subject line
     html:emailTemplate(order), // html body
   });

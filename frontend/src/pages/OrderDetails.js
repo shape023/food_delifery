@@ -64,7 +64,7 @@ const OrderDetails = () => {
                    <div className="payments-opts">
                  <div className="payment-method">
                  <div className='select-opt'>
-                     <label htmlFor="cod">{paymentMethod?.toUpperCase()}</label>
+                     <label htmlFor="cod">ОПЛАТА ПРИ ДОСТАВКЕ</label>
                  </div>
                  </div>
                  </div>
