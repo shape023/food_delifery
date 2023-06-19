@@ -16,7 +16,7 @@ const LeftSide = ({data ,show}) => {
     return (
         <div className='leftside'>
             <div className="header">
-               {show&&<Link to="/add-product"> <button style={{marginRight:"10px"}}>Add Product</button></Link>}
+               {show&&<Link to="/add-product"> <button style={{marginRight:"10px"}}>Добавить Блюдо</button></Link>}
                 {show?null:(<div className="user-info">
                     {
                         user?.user?(

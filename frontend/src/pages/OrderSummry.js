@@ -117,7 +117,7 @@ if(!res){
 
   const getPaymentButton=()=>{
     if(paymentMethod==='COD'){
-     return <button onClick={handlePlaceOrder} disabled={totalPrice===0?true:false}>{loading?<Spinner/>:'PLACE ORDER'}</button>
+     return <button onClick={handlePlaceOrder} disabled={totalPrice===0?true:false}>{loading?<Spinner/>:'СДЕЛАТЬ ЗАКАЗ'}</button>
       
     }
     if(paymentMethod==='razorpay'){
@@ -132,7 +132,7 @@ if(!res){
 
   const getPaymentMethodText=()=>{
     if(paymentMethod==='COD'){
-      return 'CASH ON DELIVERY'
+      return 'ОПЛАТА ПРИ ДОСТАВКЕ'
     }
     if(paymentMethod==='razorpay'){
       return 'RAZORPAY'
@@ -163,7 +163,7 @@ if(!res){
                 <p>{address?.name}</p>
                 <span>{address.address},{address.town}</span>
                 <span>{address.city},{address.state} -{address.pinCode} </span>
-                <span><b>Мобильный номер телефона</b>{address?.mobNo}</span>
+                <span><b>Мобильный номер телефона: </b>{address?.mobNo}</span>
                </div>
                  )}
         </div>
@@ -178,7 +178,7 @@ if(!res){
                             </div>
                             <div className="des">
                                <h3>{item?.name}</h3>
-                               <p>qty:{item.qty}</p>
+                               <p>Количество: {item.qty}</p>
                                <p className='des'>{item.description?item.description:'Treat your taste buds with Double Pepper Barbecue Chicken, Peri-Peri Chicken, Chicken Tikka & Grilled Chicken Rashers'}</p>
                             </div>
                             <div className="price">

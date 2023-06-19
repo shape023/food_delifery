@@ -6,7 +6,7 @@ const Message = ({img,msg,showModal,type,closeModal}) => {
             <div className='message-box'>
               <img src={img} alt="" />
               <p className={type}>{msg}</p>
-              <button onClick={()=>closeModal(false)}>Ok</button>
+              <button onClick={()=>closeModal(false)}>Ок</button>
             </div>
         </div>
         

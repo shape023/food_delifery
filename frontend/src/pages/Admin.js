@@ -53,17 +53,17 @@ const Admin = () => {
     <Header/>
     <div className="admin-items">
         <div className="admin-item">
-            <p>Image</p>
-            <p>Name</p>
-            <p>Stock</p>
-            <p>Count</p>
+            <p>Изображение</p>
+            <p>Название</p>
+            <p>Наличие</p>
+            <p>Количество</p>
         </div>
      {
         data.map((item)=>(
          <div  className='admin-item' key={item.name}>
             <img src={item.img} alt="" />
            <p>{item.name}</p>
-            <p>{!item.outOfStock?"In Stock":"Out of Stock"}</p>
+            <p>{!item.outOfStock?"В наличии":"Нет в наличии"}</p>
             <div className='handleBtn'>
             <div className='btn' onClick={()=>decreaseQty(item)}><IoMdRemove/></div>
             <p>{item.inStockItem}</p>

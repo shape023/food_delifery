@@ -26,20 +26,20 @@ const OrderDetails = () => {
    <SideBar/>
 {!loading?(<div className="shipping-details">
 <div className="shippingshippingAddress">
-<h3>ORDER DETAILS</h3>
+<h3>ДЕТАЛИ ЗАКАЗА</h3>
 <div className="add-sec-area">
-    <h4 style={{margin:'20px 0'}}>Order ID:{_id}</h4>
-    <h4>Shipping</h4>
+    <h4 style={{margin:'20px 0'}}>ID ЗАКАЗА: {_id}</h4>
+    <h4>Доставка</h4>
       {shippingAddress&&(
           <div  className={`og-add`}>
              <p>{shippingAddress.name}</p>
              <span>{shippingAddress.address},{shippingAddress.town}</span>
              <span>{shippingAddress.city},{shippingAddress.state} -{shippingAddress.pinCode} </span>
-             <span><b>Mobile No:</b>{shippingAddress.mobNo}</span>
+             <span><b>Мобильный номер телефона: </b>{shippingAddress.mobNo}</span>
             </div>
               )}
      </div>
-     <h4>Products</h4>
+     <h4>Блюда</h4>
                   <div className="cart-area">
                       
                   <div className="all-items">
@@ -50,8 +50,8 @@ const OrderDetails = () => {
                          </div>
                          <div className="des">
                             <h3>{item.name}</h3>
-                            <p>qty:{item.qty}</p>
-                            <p className='des'>{item.description?item.description:'Treat your taste buds with Double Pepper Barbecue Chicken, Peri-Peri Chicken, Chicken Tikka & Grilled Chicken Rashers'}</p>
+                            <p>Количество: {item.qty}</p>
+                            <p className='des'>{item.description?item.description:'Порадуйте свои вкусовые рецепторы вкуснейшими блюдами'}</p>
                          </div>
                          <div className="price">
                            <h2><span>Руб. </span>{item.price}</h2>
@@ -60,7 +60,7 @@ const OrderDetails = () => {
                      ))}
                    </div>
                    </div>
-                   <h4>Payment Method</h4>
+                   <h4>Метод Оплаты</h4>
                    <div className="payments-opts">
                  <div className="payment-method">
                  <div className='select-opt'>
@@ -74,8 +74,8 @@ const OrderDetails = () => {
                      <h4>ИНФОРМАЦИЯ О ЦЕНЕ</h4>
                      <div className="details">
                          <div className="item">
-                             <p>Price</p>
-                             <p><span>₹</span>{itemsPrice}</p>
+                             <p>Цена</p>
+                             <p><span>₽</span>{itemsPrice}</p>
                          </div>
                         
                          <div className="item">
@@ -94,7 +94,7 @@ const OrderDetails = () => {
 </div>
 <Message
  showModal={show}
- msg={"Order Placed Successfuly"}
+ msg={"Заказ успешно заказан"}
  img={"https://cdn.dribbble.com/users/335541/screenshots/7102045/media/5b7237fe7bbfa31531d6e765576f1bc4.jpg?compress=1&resize=400x300"}
  type="error"
  closeModal={setShow}

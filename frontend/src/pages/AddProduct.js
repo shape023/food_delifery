@@ -13,7 +13,7 @@ const AddProduct = () => {
     const [price,setPrice]=useState()
     const [show,setShow]=useState(false)
     const [category,setCategory]=useState("")
-    const [fileName,setFileName]=useState("Add Image")
+    const [fileName,setFileName]=useState("Добавить изображение")
     const [loading,setLoading]=useState(false)
     const handleSubmit=async(e)=>{
         e.preventDefault()
@@ -53,21 +53,20 @@ const AddProduct = () => {
                 </div>
                 
                 <form onSubmit={handleSubmit}>
-                    <input type="text" onChange={(e)=>setName(e.target.value)} name='name' placeholder='Product Name'  />
-                    <input type="text" onChange={(e)=>setPrice(e.target.value)} name="price" id="" placeholder='Price'  />
-                    <input type="text" onChange={(e)=>setDes(e.target.value)} name='description' placeholder='description' /> 
+                    <input type="text" onChange={(e)=>setName(e.target.value)} name='name' placeholder='Название Блюда'  />
+                    <input type="text" onChange={(e)=>setPrice(e.target.value)} name="price" id="" placeholder='Цена'  />
+                    <input type="text" onChange={(e)=>setDes(e.target.value)} name='description' placeholder='Описание' /> 
                       <select onChange={(e)=>setCategory(e.target.value)} >
-                       <option value="">Category</option>
-                       <option value="pizza">pizza</option>
-                       <option value="Burger">burger</option>
-                       <option value="Sandwich">sandwich</option>
-                       <option value="Smoothy">smoothy</option>
-                       <option value="Snak">snak</option>
-                       <option value="Drink">drink</option>
+                       <option value="">Категория</option>
+                       <option value="pizza">Пиццы</option>
+                       <option value="Burger">Бургеры</option>
+                       <option value="Sandwich">Сэндвичи</option>
+                       <option value="Snak">Закуски</option>
+                       <option value="Drink">Напитки</option>
                       </select>
                     <label htmlFor="file">{fileName}</label>
                     <input type="file" id='file' onChange={handleOnChange} />
-                    <button type="submit">{ loading?<Spinner/>:'Add'}</button>
+                    <button type="submit">{ loading?<Spinner/>:'Добавить'}</button>
                 </form>
                 
             </div>
@@ -77,7 +76,7 @@ const AddProduct = () => {
 
     <Message
  showModal={show}
- msg={"Product Added Successfuly"}
+ msg={"Продукт успешно добавлен"}
  img={"https://cdn.dribbble.com/users/335541/screenshots/7102045/media/5b7237fe7bbfa31531d6e765576f1bc4.jpg?compress=1&resize=400x300"}
  type="error"
  closeModal={setShow}

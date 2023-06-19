@@ -39,10 +39,10 @@ const Address = () => {
                 <p>{address.name}</p>
                 <span>{address.address},{address.town}</span>
                 <span>{address.city},{address.state} -{address.pinCode} </span>
-                <span><b>Mobile No:</b>{address.mobNo}</span>
+                <span><b>Мобильный номер телефона: </b>{address.mobNo}</span>
                 <div className="btns">
-                    <button className='btn' onClick={()=>delteAddress(address._id)}>Remove</button>
-                    <button className='btn' onClick={()=>handleUpdateAddress(address)}>Edit</button>
+                    <button className='btn' onClick={()=>delteAddress(address._id)}>Удалить</button>
+                    <button className='btn' onClick={()=>handleUpdateAddress(address)}>Редактировать</button>
                 </div>
                </div>
             ))

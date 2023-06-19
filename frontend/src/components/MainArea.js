@@ -62,7 +62,7 @@ const MainArea = () => {
                   <img src="https://cdn-icons-png.flaticon.com/128/6518/6518098.png" alt="sandwich" />
                   </div>
                   <div className="text">
-                  Сэндвичы
+                  Сэндвичи
                   </div>
                   
               </div>
